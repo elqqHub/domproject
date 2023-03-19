@@ -1,0 +1,30 @@
+<!-- HTML tiedostolle pakolliset tilpehöörit (käytin Emmet Abbreviationia eli kirjoitin tyhjään HTML tiedostoon huutomerkin ja painoin enteriä) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linkataan CSS tiedosto HTML tiedostoon -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Annetaan sivulle title joka lukee selaimessa ylhäällä kyseisen välilehden kohdalla -->
+    <title>To-do lista</title>
+  </head>
+  <body>
+    <!-- Luodaan div jonka sisälle koko sovellus asetetaan -->
+    <div class="container">
+      <!-- Sovelluksen "otsikko" -->
+      <h1>Eliaksen hieno to-do lista</h1>
+      <!-- Luodaan formi -->
+      <form class="todo-form">
+        <!-- Luodaan formiin input laatikko johon listaan lisättävät tehtävät kirjoitetaan -->
+        <input type="text" class="todo-input" id="todoInput" placeholder="Uutta tehtävää?">
+        <!-- Luodaan formiin buttoni jota painamalla input laatikkoon kirjoitettu tehtävä lisätään listaan -->
+        <button type="submit" class="add-button">Lisää tehtävä</button>
+      </form>
+      <!-- Luodaan lista mihin lisätyt tehtävät ilmestyvät -->
+      <ul class="todo-items"></ul>
+    </div>
+    <!-- Linkataan JS tiedosto HTML tiedostoon -->
+    <script src="main.js"></script>
+  </body>
+</html>

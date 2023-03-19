@@ -79,7 +79,7 @@ function getFromLocalStorage() {
     renderTodos(todos);
   }
 }
-// Luodaan funktio jonka avulla saadaan muutettua tehtävä suoritetuksi tai ei suoritetuksi ja renderöi lopuksi "päivitetyn" listan
+// Luodaan funktio jonka avulla saadaan muutettua tehtävä suoritetuksi tai ei suoritetuksi ja päivittää localstoragen statuksen muututtua
 function toggle(id) {
   todos.forEach(function (item) {
     if (item.id == id) {
@@ -88,7 +88,7 @@ function toggle(id) {
   });
   addToLocalStorage(todos);
 }
-// Luodaan funktio, joka poistaa tehtävän arrayltä, päivittää localstoragen poiston jälkeen ja renderöi lopuksi "päivitetyn" listan
+// Luodaan funktio, joka poistaa tehtävän arrayltä ja päivittää localstoragen poiston jälkeen
 function deleteTodo(id) {
   todos = todos.filter(function (item) {
     return item.id != id;

@@ -1,8 +1,10 @@
 # domproject
+
 School project regarding dom scripting
 
 
 LÄHTEET:
+
 Devression. 2022. Build a Todo List App in HTML CSS JavaScript | EASY BEGINNER TUTORIAL. Viitattu 19.3.2023. https://youtu.be/q0-N_w0Op84
 
 Hovhannisyan. 2022. HTML Input Validation with JavaScript. Viitattu 19.3.2023. https://www.aleksandrhovhannisyan.com/blog/html-input-validation-without-a-form/

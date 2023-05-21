@@ -98,7 +98,6 @@ function deleteTodo(id) {
 // Haetaan kaikki tehtävät localstoragesta
 getFromLocalStorage();
 // Lisätään tehtävälistalle "kuuntelija" joka odottaa että delete buttonia tai checkboxia klikataan
-// after that addEventListener <ul> with class=todoItems. Because we need to listen for click event in all delete-button and checkbox
 todoItemsList.addEventListener('click', function (event) {
   // Tarkastetaan klikattiinko checkboxia ja mikäli näin on yksilöidään tehtävä data keyllä ja suoritetaan sille toggle funktio joka aikaansaa suoritus efektin
   if (event.target.type === 'checkbox') {
